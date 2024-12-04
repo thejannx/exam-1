@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Management</title>
+</head>
+<body>
+    <h1>Meal Management</h1>
+    <form>
+        <h2>Create New Meal</h2>
+        <label for="meal-name">Meal Name:</label>
+        <input type="text" id="meal-name" name="meal-name"><br><br>
+
+        <label for="ingredients">Ingredients:</label>
+        <input type="text" id="ingredients" name="ingredients"><br><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br><br>
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="appetizer">Appetizer</option>
+            <option value="main-course">Main Course</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine"><br><br>
+
+        <button type="submit">Create Meal</button>
+    </form>
+
+    <h2>Meal List</h2>
+    <table border="1">
+        <tr>
+            <th>Meal Name</th>
+            <th>Ingredients</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Cuisine</th>
+        </tr>
+        <tr>
+            <td>Caesar Salad</td>
+            <td>Lettuce, croutons, parmesan, Caesar dressing</td>
+            <td>$12.99</td>
+            <td>Appetizer</td>
+            <td>Italian</td>
+        </tr>
+        <tr>
+            <td>Grilled Chicken</td>
+            <td>Chicken breast, spices, olive oil</td>
+            <td>$18.50</td>
+            <td>Main Course</td>
+            <td>American</td>
+        </tr>
+        <tr>
+            <td>Chocolate Cake</td>
+            <td>Flour, cocoa, sugar, butter</td>
+            <td>$6.99</td>
+            <td>Dessert</td>
+            <td>French</td>
+        </tr>
+    </table>
+</body>
+</html>

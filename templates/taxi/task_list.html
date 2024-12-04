@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Management</title>
+</head>
+<body>
+    <h1>Taxi Management</h1>
+    <form>
+        <h2>Create New Taxi</h2>
+        <label for="taxi-name">Taxi Name:</label>
+        <input type="text" id="taxi-name" name="taxi-name"><br><br>
+
+        <label for="license-plate">License Plate:</label>
+        <input type="text" id="license-plate" name="license-plate"><br><br>
+
+        <label for="driver-name">Driver Name:</label>
+        <input type="text" id="driver-name" name="driver-name"><br><br>
+
+        <label for="capacity">Passenger Capacity:</label>
+        <input type="number" id="capacity" name="capacity"><br><br>
+
+        <label for="car-model">Car Model:</label>
+        <input type="text" id="car-model" name="car-model"><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="available">Available</option>
+            <option value="busy">Busy</option>
+            <option value="under-maintenance">Under Maintenance</option>
+        </select><br><br>
+
+        <button type="submit">Create Taxi</button>
+    </form>
+
+    <h2>Taxi List</h2>
+    <table border="1">
+        <tr>
+            <th>Taxi Name</th>
+            <th>License Plate</th>
+            <th>Driver</th>
+            <th>Capacity</th>
+            <th>Model</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>CityCab</td>
+            <td>AB123CD</td>
+            <td>John Doe</td>
+            <td>4</td>
+            <td>Toyota Prius</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>ExpressRide</td>
+            <td>EF456GH</td>
+            <td>Jane Smith</td>
+            <td>6</td>
+            <td>Honda Odyssey</td>
+            <td>Busy</td>
+        </tr>
+        <tr>
+            <td>GreenTaxi</td>
+            <td>IJ789KL</td>
+            <td>Ahmed Khan</td>
+            <td>4</td>
+            <td>Hyundai Sonata</td>
+            <td>Under Maintenance</td>
+        </tr>
+    </table>
+</body>
+</html>
